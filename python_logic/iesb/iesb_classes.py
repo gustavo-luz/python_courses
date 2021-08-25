@@ -44,7 +44,7 @@ with open('person.csv','w') as arq:
     writer=csv.writer(arq,delimiter=';')
     writer.writerows(dado)
 
-"""
+
 
 #q5 b
 with open('reais.txt','w') as arq:
@@ -57,4 +57,10 @@ with open('reais.txt','w') as arq:
     num=1.3565
     arq.write("{0:.2f}\n".format(num))
     
-    
+  """
+
+  #aula 18 q5 A
+import csv
+csvReader = csv.reader(open("arquivo.csv", 'wt'), delimiter='\t')
+for linha in csvReader:
+    print("COD" + linha[0] + " NOME: " + linha[2] + "QTDE: " + int(linha[3]))
